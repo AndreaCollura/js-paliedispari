@@ -8,30 +8,65 @@
 
 
 
-    const selChoice = document.getElementById('choice');
+// FUNZIONI
 
-    const selNumber = document.getElementById('numsel');
+function calcNumb (){
+
+    const selChoice = document.getElementById('choice');
+    const selNumber = parseInt(document.getElementById('numsel').value);  
+    const diceNumPc = getRndNumber (1,5);
+    const numb = selNumber;
+    const summary = numb + diceNumPc;
+    const evOrOd = selChoice;
+
+     
+        
+        
+
+        if (summary % 2){
+            
+            console.dir(numb);
+            console.dir(diceNumPc);
+            console.dir(summary);
+            console.dir('even');
+        } else {
+            
+            console.dir(numb);
+            console.dir(diceNumPc);
+            console.dir(summary);
+            console.dir('odd');
+        }  
+            
+    }
+
+
+    function whoWin (){
+
+    }
+    
 
     const btnRoll = document.querySelector('button');
 
     btnRoll.addEventListener('click', calcNumb );
+    
+
+    
+
+   
+
+        
+    
+
+    
+
+    
+   
 
 
-    function calcNumb (){
 
-        const evOrOd = selChoice.value;
-        const numb = selNumber.value;
-        const diceNumPc = getRndNumber (1,5);
-        const summary = numb + diceNumPc
-        console.log(diceNumPc);
 
-        if (summary % 2 === 0){
-            
-            
-        } else {
 
-        }
-            
-            
-    }
+
+
+
     
